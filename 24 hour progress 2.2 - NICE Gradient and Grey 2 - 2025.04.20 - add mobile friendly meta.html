@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+
+<html>
+  
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+<style>
+
+.bg {
+  background: white;
+}
+
+
+.container {
+  min-width: 600px;
+  background-color: #ffffff;
+  margin: auto;
+  text-align: center;
+  display: block;
+  
+}
+
+
+.time {
+  float: center;
+  text-align: center;
+  font-size: 90px;
+  color: #000000;
+  margin-top: 60px;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  animation: animate 5s ease-in-out infinite;
+  -webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.progress-wrapper {
+  max-width: 800px;
+  min-height: 45px;
+  background: #888888;
+  display:flex;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.progress {
+  width: 0%;
+  min-height: 45px;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  animation: animate 5s ease-in-out infinite;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.progress span {
+  color: white;
+  position: relative;
+  top:15px;
+  right: 10px;
+  font-weight: lighter;
+  font-family: "Audiowide", sans-serif;
+}
+
+  .button {
+  background-color: rgb(255, 255, 255);
+  border: grey;
+    border-width: 2px;
+  color: grey;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  width:50px;
+height:50px;
+display: inline-block;
+font-size: 20px;
+margin-inline: 10px;
+font-family: "Audiowide", sans-serif;
+
+
+}
+
+
+.left {
+    float: center;
+  text-align: center;
+  font-size: 70px;
+  color: #000000;
+  margin-top: 30px;
+  font-weight: 300;
+  font-family: "Audiowide", sans-serif;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 300%;
+  animation: animate 5s ease-in-out infinite;
+  -webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+  
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+
+</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="bg">
+
+    <br>
+    <br>
+    <br>
+
+    <div class="time"></div>
+    <br><br>
+    <div class="progress-wrapper">
+
+
+
+        <div class="progress">
+
+            
+            <span>0%</span>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <div class="container">
+
+
+        <button class ="button" onclick = "changeColor(this)">1</button>
+        <button class="button"  onclick = "changeColor(this)">2</button>
+        <button class="button"  onclick = "changeColor(this)">3</button>
+        <button class="button"  onclick = "changeColor(this)">4</button>
+        <button class="button"  onclick = "changeColor(this)">5</button>
+        <button class="button"  onclick = "changeColor(this)">6</button>
+        <button class="button"  onclick = "changeColor(this)">7</button>
+        <button class="button"  onclick = "changeColor(this)">8</button>
+
+    </div>
+
+    
+    <br>
+
+
+    <div class="container">
+
+        <button class="button"  onclick = "changeColor(this)">9</button>
+        <button class="button"  onclick = "changeColor(this)">10</button>
+        <button class="button"  onclick = "changeColor(this)">11</button>
+        <button class="button"  onclick = "changeColor(this)">12</button>
+        <button class="button"  onclick = "changeColor(this)">13</button>
+        <button class="button"  onclick = "changeColor(this)">14</button>
+        <button class="button"  onclick = "changeColor(this)">15</button>
+        <button class="button"  onclick = "changeColor(this)">16</button>
+
+    </div>
+
+
+
+    <br>
+
+
+    <div class="container">
+
+        <button class="button"  onclick = "changeColor(this)">17</button>
+        <button class="button"  onclick = "changeColor(this)">18</button>
+        <button class="button"  onclick = "changeColor(this)">19</button>
+        <button class="button"  onclick = "changeColor(this)">20</button>
+        <button class="button"  onclick = "changeColor(this)">21</button>
+        <button class="button"  onclick = "changeColor(this)">22</button>
+        <button class="button"  onclick = "changeColor(this)">23</button>
+        <button class="button"  onclick = "changeColor(this)">24</button>
+
+    </div>
+
+
+    <div class="left">
+
+        <p id="left"></p> <p>&#160hours left</p>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+var countDownDate = new Date("Jan 13, 2024 00:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+  document.getElementById("left").innerHTML = hours;
+  
+  var remaining = TimeSpan.FromHours(24) - countDownDate;
+
+  
+  
+}, 1000);
+
+
+
+let pc,
+per = 0;
+
+        function changeColor(event){
+            var color = 'grey';
+            event.style.backgroundColor=color;
+        
+        }
+
+      function checkTime() {
+       var today = new Date();
+       var t = [today.getHours(), today.getMinutes(), today.getSeconds()];
+      pc = Math.round(((t[0] * 60 * 60 + t[1] * 60 + t[2]) / (24 * 60 * 60)) * 1000) / 10;
+  document.querySelector(".time").textContent = t.map((d) => (d < 10 ? "0" + d : d)).join(" : ");
+  }
+
+    function progressLoad() {
+  document.querySelector(".progress").style.width = `${per >= pc ? pc : per}%`;
+  document.querySelector(".progress span").innerHTML = `${per >= pc ? pc : per}%`;
+  per++;
+
+}
+checkTime();
+setInterval(checkTime, 500);
+setInterval(progressLoad, 90);
+          
+        
+
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
